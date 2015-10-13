@@ -4,22 +4,26 @@ $(document).ready(function() {
 //prompt for number
 var numEntry = prompt("Please enter a number between 1 and 100");
 //function that accepts the number and applying fizz, buzz logic
+appNumber(numEntry);
 function appNumber (numEntry) {
-	for(var i = 0; i < numEntry; i++) {
+	for(var i = 0; i <= numEntry; i++) {
 		if(i % 3 == 0 && i % 5 == 0) {
 			console.log("FizzBuzz");
 			$('#number').append('<li>fizz-buzz</li>');
 		} else if (i % 3 == 0) {
 			console.log("Buzz");
-			$('#number').append('<li>buzz</li>');
+		    $('#number').append('<li>buzz</li>');
 		} else if (i % 5 == 0) {
 			console.log("Fizz");
 			$('#number').append('<li>fizz</li>');
 		} else {
-			console.log(i);
+			$('#number').append('<li>'+ i + '</li>');
+			//console.log+(i);
 		}
+		parseInt(numEntry);
 	}
-}
+}	
+});
 
 //convert value from string to a number
 //validate input using parseInt
@@ -46,7 +50,6 @@ function appNumber (numEntry) {
 // 	appNumber++;
 // }
 
-});
 
 
 // var appNumber1 = appNumber+=1;
