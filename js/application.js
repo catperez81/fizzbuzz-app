@@ -5,6 +5,10 @@ $(document).ready(function() {
 var numEntry = prompt("Please enter a number between 1 and 100");
 //function that accepts the number and applying fizz, buzz logic
 appNumber(numEntry);
+parseInt(numEntry);
+
+if (numEntry % 1 != 0);
+
 function appNumber (numEntry) {
 	for(var i = 0; i <= numEntry; i++) {
 		if(i % 3 == 0 && i % 5 == 0) {
@@ -20,7 +24,6 @@ function appNumber (numEntry) {
 			$('#number').append('<li>'+ i + '</li>');
 			//console.log+(i);
 		}
-		parseInt(numEntry);
 	}
 }	
 });
