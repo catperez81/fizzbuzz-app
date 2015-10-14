@@ -5,9 +5,10 @@ $(document).ready(function() {
 var numEntry = prompt("Please enter a number between 1 and 100");
 //function that accepts the number and applying fizz, buzz logic
 appNumber(numEntry);
-parseInt(numEntry);
+integer.parseInt();
 
-if (numEntry % 1 != 0);
+
+if (numEntry % 1 != 0); {
 
 function appNumber (numEntry) {
 	for(var i = 0; i <= numEntry; i++) {
@@ -25,7 +26,9 @@ function appNumber (numEntry) {
 			//console.log+(i);
 		}
 	}
-}	
+}
+}
+	
 });
 
 //convert value from string to a number
